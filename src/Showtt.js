@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import html2pdf from 'html2pdf.js';
 
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-const timeSlots = ['9:00 AM - 11:00 AM', '11:00 AM - 1:00 PM', '3:00 PM - 5:00 PM', '5:00 PM - 7:00 PM'];
+const timeSlots = ['9:00 AM - 11:00 AM', '11:00 AM - 1:00 PM','1:00 PM-2:00 PM', '3:00 PM - 5:00 PM', '5:00 PM - 7:00 PM'];
 
 const ShowTimetable = () => {
   const params = useParams();

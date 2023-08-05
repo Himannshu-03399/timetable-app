@@ -17,7 +17,7 @@ const courses = [
       },
       P: {
         day: "Thursday",
-        slot: 3,
+        slot: 4,
         room: "CC3-5404"
       },
     },
@@ -35,7 +35,7 @@ const courses = [
       },
       T: {
         day: "Thursday",
-        slot: 3,
+        slot: 4,
         room: "CC3-5207",
       },
       P: {
@@ -64,7 +64,7 @@ const courses = [
       },
       P: {
         day: "Thursday",
-        slot: 4,
+        slot: 5,
         room: "CC3-5403",
       }
     },
@@ -87,7 +87,7 @@ const courses = [
       },
       P: {
         day: "Wednesday",
-        slot: 4,
+        slot: 5,
         room: "CC3-5403",
       }
     },
@@ -106,12 +106,12 @@ const courses = [
       },
       T: {
         day: "Friday",
-        slot: 3,
+        slot: 4,
         room: "CC3-5155",
       },
       P: {
         day: "Monday",
-        slot: 3,
+        slot: 4,
         room: "CC3-5403",
       }
     },
@@ -135,7 +135,7 @@ const courses = [
     },
     P: {
       day: "Tuesday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5403",
     }
   },
@@ -154,12 +154,12 @@ const courses = [
     },
     T: {
       day: "Friday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5106",
     },
     P: {
       day: "Tuesday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5404",
     }
   },
@@ -178,12 +178,12 @@ const courses = [
     },
     T: {
       day: "Monday",
-      slot: 4,
+      slot: 5,
       room: "CC3-5206",
     },
     P: {
       day: "Wednesday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5403",
     }
   },
@@ -207,7 +207,7 @@ const courses = [
     },
     P: {
       day: "Tuesday",
-      slot: 4,
+      slot: 5,
       room: "CC3-5403",
     }
   },
@@ -221,17 +221,17 @@ const courses = [
   type: {
     L: {
       day: "Monday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5254", 
     },
     T: {
       day: "Friday",
-      slot: 4,
+      slot: 5,
       room: "CC3-5207",
     },
     P: {
       day: "Tuesday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5403",
     }
   },
@@ -244,18 +244,18 @@ const courses = [
   abbr: 'BIO',
   type: {
     L: {
-      day: "Wednesday",
-      slot: 1,
+      day: ["Wednesday"],
+      slot: [1],
       room: "CC3-5207", 
     },
     T: {
       day: "Monday",
-      slot: 4,
+      slot: 5,
       room: "CC3-5207",
     },
     P: {
       day: "Wednesday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5404",
     }
   },
@@ -269,7 +269,7 @@ const courses = [
   type: {
     L: {
       day: "Wednesday",
-      slot: 3,
+      slot: 4,
       room: "CC3-5155", 
     },
     T: {
@@ -284,6 +284,53 @@ const courses = [
     }
   },
 },
+{
+  id: 13,
+  basket: 1,
+  name: 'Radar and Satellite Communication',
+  abbr: 'RSC',
+  type: {
+    L: {
+      day: "Wednesday",
+      slot: 2,
+      room: "2121", 
+    },
+    T: {
+      day: "Friday",
+      slot: 2,
+      room: "2121",
+    },
+    P: {
+      day: "Thursday",
+      slot: 4,
+      room: " "
+    },
+  },
+},
+{
+  id: 14,
+  basket: 1,
+  name: 'RFIC Design',
+  abbr: 'RFIC',
+  type: {
+    L: {
+      day: "Monday",
+      slot: 3,
+      room: "CC3-5254", 
+    },
+    T: {
+      day: "Friday",
+      slot: 5,
+      room: "CC3-5207",
+    },
+    P: {
+      day: "Tuesday",
+      slot: 4,
+      room: "CC3-5403",
+    }
+  },
+},
+
 ];
 
   export const dropdownOptions1 = courses.
