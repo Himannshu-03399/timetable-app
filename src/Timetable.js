@@ -56,7 +56,10 @@ const Timetable = () => {
     }
     navigate('/tt/' + encodeURIComponent(JSON.stringify(selected)));
   };
-
+  
+  const handleSelectFocus = (event) => {
+    event.target.blur(); // This will prevent the keyboard from showing up on mobile devices
+  };
 
   return (
     <div>
@@ -66,6 +69,7 @@ const Timetable = () => {
         onChange={handleBasket1Change}
         value={elective.basket1}
         placeholder="Select basket 1 elective"
+        onFocus={handleSelectFocus} 
       />
       <br/>
       <Select
@@ -73,6 +77,7 @@ const Timetable = () => {
         onChange={handleBasket2Change}
         value={elective.basket2}
         placeholder="Select basket 2 elective"
+        onFocus={handleSelectFocus}
       />
       <br/>
       <Select
@@ -80,6 +85,7 @@ const Timetable = () => {
         onChange={handleBasket3Change}
         value={elective.basket3}
         placeholder="Select basket 3 elective"
+        onFocus={handleSelectFocus}
       />
       <button onClick={submitElectives}>SUBMIT</button>
     </div>
